@@ -15,6 +15,7 @@ h4, .h4
     letter-spacing: 5px;
     line-height: 1;
 }
+a { text-decoration: none; }
 ul { list-style-type: none; padding-left: 0; }
 header { position: fixed; display: block; width: 100%; top: -100px; z-index: 2000; opacity: 0; transition: all .5s; }
 header.sticky 
@@ -71,12 +72,12 @@ header.sticky
 .list-reseau { display: flex; flex-wrap: wrap; list-style: none; }
 .list-reseau li { margin-right: 1rem; }
 .list-reseau li a { font-size: 2rem; }
-.linkedin { color: #006192; }
-.github { color: #777; }
-.instagram { color: #cc2366; }
+.contact li:hover { color: #777; }
 .template .col-sm-5 { overflow: hidden; height: 300px; margin-top: 2rem; }
 footer { background-image: url('img/site/banner.png'); }
 footer .row { padding-top: 3rem; padding-bottom: 1rem; }
+footer a { color: #fff; }
+footer a:hover { color: #8c4429; text-decoration: none; }
 @media (min-width: 768px) {
     .banner h1 { font-size: 4rem; text-transform: uppercase; }
 }
