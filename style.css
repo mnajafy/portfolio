@@ -82,12 +82,9 @@ header.sticky
 .template .col-sm-5 { overflow: hidden; height: 300px; margin-top: 2rem; }
 footer 
 {
-    padding: 1rem;
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-    border-top: 1px solid rgba(51, 51, 51, 0.9);
+    background-image: url('img/site/banner.png');
 }
+footer .row { padding-top: 3rem; padding-bottom: 1rem; }
 @media (min-width: 768px) {
     .banner h1
     {
@@ -97,4 +94,5 @@ footer
 }
 @media (min-width: 1200px) {
     .section { padding-top: 5rem; padding-bottom: 5rem; }
+    footer .row { padding-top: 5rem; padding-bottom: 2rem; }
 }
