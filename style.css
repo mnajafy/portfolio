@@ -1,7 +1,7 @@
-ul 
+h1
 {
-    list-style-type: none;
-    padding-left: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 h4, .h4 
 { 
@@ -15,6 +15,7 @@ h4, .h4
     letter-spacing: 5px;
     line-height: 1;
 }
+ul { list-style-type: none; padding-left: 0; }
 header { position: fixed; display: block; width: 100%; top: -100px; z-index: 2000; opacity: 0; transition: all .5s; }
 header.sticky 
 { 
@@ -46,11 +47,7 @@ header.sticky
     background-image: url('img/site/header_bg.jpg');
     z-index: -1;
 }
-.banner h1
-{
-    font-size: 2rem;
-    text-transform: uppercase;
-}
+.banner p { letter-spacing: 5px; }
 .section { padding-top: 3rem; padding-bottom: 3rem; }
 .section-title { position: relative; display: block; margin-bottom: 1.25rem; }
 .section-title hr 
@@ -76,21 +73,12 @@ header.sticky
 .list-reseau li a { font-size: 2rem; }
 .linkedin { color: #006192; }
 .github { color: #777; }
-.instagram { 
-    color: #cc2366; 
-}
+.instagram { color: #cc2366; }
 .template .col-sm-5 { overflow: hidden; height: 300px; margin-top: 2rem; }
-footer 
-{
-    background-image: url('img/site/banner.png');
-}
+footer { background-image: url('img/site/banner.png'); }
 footer .row { padding-top: 3rem; padding-bottom: 1rem; }
 @media (min-width: 768px) {
-    .banner h1
-    {
-        font-size: 4rem;
-        text-transform: uppercase;
-    }
+    .banner h1 { font-size: 4rem; text-transform: uppercase; }
 }
 @media (min-width: 1200px) {
     .section { padding-top: 5rem; padding-bottom: 5rem; }
