@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+:root {
+    scrollbar-color: #f8f9fa transparent !important;
+    scrollbar-width: thin !important;
+}
+@import '../lib/bootstrap-4.0.0/scss/bootstrap';
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: url('../../img/portfolio/main_bg.png') repeat-y;
+    background-color: $blue;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 8px;
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        width: 8px;
+        background: $light;
+        border-radius: 8px;
+    }
+}
+
+main {
+    position: relative;
+    background-color: $light;
+    border-radius: 30px;
+    overflow: hidden;
+    // padding: 1rem;
+}
+
+p {
+    color: $secondary;
+}
+
+h4, small {
+    font-family: "Prata";
+}
+
+img {
+    background-color: $white;
+}
+
+.shadow {
+  box-shadow: 1px 1px 12px $dark !important;
+}
+
+.card {
+    background-color: transparent;
+    &.card-template {
+        @extend .rounded-4;
+        max-height: 300px;
+        overflow: hidden;
+        border: none;
+        opacity: 1;
+        transition: all .6s ease-in-out;
+        &:hover {
+            @extend .shadow;
+        }
+        img {
+            transition: all .6s ease-in-out;
+            transform: scale(1);
+        }
+        &:hover img {
+            opacity: .3;
+            transform: scale(1.1);
+        }
+        .card-body {
+            @extend .rounded-4;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            bottom: -100%;
+            background-color: rgba($color: $dark, $alpha: .6);
+            color: $white;
+            transition: all .6s ease-in-out;
+        }
+        &:hover .card-body {
+            bottom: 0;
+        }
+    }
+}
+
+.btn {
+    border-radius: 30px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+.rounded-4 {
+    border-radius: 30px;
+}
+
+.competence {
+    @extend .btn;
+    @extend .border;
+    @extend .mb-2;
+    color: $secondary;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    h4 {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    .section-title-line-b,
+    .section-title-line {
+        display: block;
+        width: 100px;
+        height: 4px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 30px;
+    }
+    .section-title-line {
+        background: linear-gradient(to left, $blue 50%, $secondary 50%);
+    }
+    .section-title-line-b {
+        background: linear-gradient(to left, $secondary 50%, $blue 50%);
+    }
+}
+
+.col-img {
+    overflow: hidden;
+}
+
+/*...........*/
+.back-top {
+  position: fixed;
+  bottom: 30px;
+  margin-left: 20px;
+  z-index: 1000;
+  display: none;
+  right: 1%;
+  a {
+    display: block;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    width: 50px;
+    height: 50px;
+    background-color: $dark;
+    border-radius: 50%;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      top: calc(50% - 4px);
+      right: calc(50% - 7px);
+      transform: rotate(-45deg);
+    }
+  }
+}
