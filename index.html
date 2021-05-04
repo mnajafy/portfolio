@@ -1,194 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <!-- metas -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- links -->
-    <link rel="shortcut icon" type="image/png" href="img/site/logo.png" />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- logo -->
+    <link rel="shortcut icon" type="image/png" href="img/portfolio/logo.png" />
+    <!-- lib -->
+    <link rel="stylesheet" href="lib/fontawesome-5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="lib/aos/dist/aos.css">
+    <!-- mainCss -->
+    <link rel="stylesheet" href="dist/css/portfolio.css">
     <!-- title -->
-    <title>portfolio : mohammad najafy</title>
+    <title>portfolio: Mohammad najafy | développeur web | développeur symfony | Développement BackEnd | Développement FrontEnd</title>
 </head>
-<body>
-    <header class="">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Mohammad NAJAFY</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#presentation">Présentation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#competences">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#templates">web themes & templates</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <section class="banner text-center">
-        <div class="container ">
-            <h1>mohammad najafy</h1>
-            <p>développeur / intégrateur web junior</p>
-        </div>
-    </section> <!-- end banner -->
-
-    <section id="presentation" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-lg-center">Présentation</h4>
-                <hr class="ml-0 ml-lg-auto">
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 img-pre">
-                    <img class="img-presentation" src="img/site/mnajafy.png" alt="">
-                </div>
-                <div class="col-lg-8">
-                    <p>Jeune développeur web issu de la formation Développeur / intégrateur en réalisation d'applications web à 3wAcademie, je maîtrise les technologies front-end, notamment Html, Css, et JavaScript avec les frameworks Bootstrap je fait aussi du back-end, et particulièrement PHP. Pour les CMS, je me suis familiarisé avec le WordPress.</p>
-                    <p>Pour la partie gestion de projets, j’ai des connaissances en méthode agile ainsi que l’outil Git pour la gestion de version de projet.</p>
-                    <p>Je suis à l'écoute d'opportunités en développement de site et application web.</p>
-                    <p>Je suis particulièrement intéressé par le développement en langage PHP et ses frameworks </p>
-                </div>
-            </div>
-        </div>
-    </section> <!-- end section Présentation -->
-
-    <section id="competences" class="section bg-light">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-lg-center">Compétences</h4>
-                <hr class="ml-0 ml-lg-auto">
-            </div>
-
-            <div class="row">
-                <div class="col-6 col-md-4 col-xl-2">
-                    <ul>
-                        <li>Html</li>
-                        <li>CSS / SASS</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </div>
+<body id="top">
+    <div class="container py-3 py-md-4 py-lg-5">
+        <main>
+            <div class="container">
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="https://mnajafy.github.io/portfolio/">
+                            <!-- <span class="bg-primary rounded-circle p-2 font-weight-bold text-light"><i class="fab fa-medium-m"></i></span> -->
+                            <img src="img/portfolio/logo.png" width="25" height="25" class="d-inline-block align-top" alt="">
+                            M.Najafy
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                 
-                <div class="col-6 col-md-4 col-xl-2">
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>Ajax</li>
-                    </ul>
-                </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://mnajafy.github.io/portfolio/#presentation">Présentation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://mnajafy.github.io/portfolio/#competences">Compétences</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://mnajafy.github.io/portfolio/#templates">Web Themes & Templates</a>
+                                </li>
+                                <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        web themes & templates
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="https://mnajafy.github.io/portfolio/#templates">web themes & templates</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="https://mnajafy.github.io/portfolio/#">portfolio</a>
+                                        <a class="dropdown-item" href="https://mnajafy.github.io/portfolio/#">e-commerce</a>
+                                        <a class="dropdown-item" href="https://mnajafy.github.io/portfolio/#">Gallery</a>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
 
-                <div class="col-6 col-md-4 col-xl-2">
-                    <ul>
-                        <li>PHP</li>
-                        <li>MySQL</li>
-                        <li>Symfony</li>
-                        <li>Yii</li>
-                    </ul>
-                </div>
+                <section class="py-3 py-md-4 py-lg-5">
+                    <div class="row">
+                        <div class="col-12 col-md-9 mx-auto">
+                            <div class="row">
+                                <div class="col-12 col-lg-5 col-img">
+                                    <div data-aos="zoom-in">
+                                        <img src="img/portfolio/mnajafy2.jpg" class="img-fluid rounded-circle p-2 p-lg-3" alt="">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-12 col-lg-7 d-flex align-items-center">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <div data-aos="fade-down">
+                                                <small class="text-muted">Dévéloppeur Web</small>
+                                                <h4 class="card-title">Mohammad Najafy</h4>
+                                            </div>
+                                            <div data-aos="fade-left">
+                                                <p class="card-text text-align-justify">Fort de mon expérience de plus de 2 ans et de mon expertise en tant que développeur d’applications web, j’accompagne les entreprises et les professionnels dans leur transformation technologique et digitale.</p>
+                                            </div>
+                                            <p class="mt-3">
+                                                <a class="text-dark mr-2" href="https://www.facebook.com/najafy"><i class="fab fa-facebook-f"></i></a>
+                                                <a class="text-dark mr-2" href="https://www.linkedin.com/in/mohammad-najafy-229b57149/"><i class="fab fa-linkedin-in"></i></a>
+                                                <a class="text-dark mr-2" href="https://twitter.com/mohammad_najafy"><i class="fab fa-twitter"></i></a>
+                                                <a class="text-dark mr-2" href="https://www.instagram.com/m.najafy69/"><i class="fab fa-instagram"></i></a>
+                                                <a class="text-dark" href="https://github.com/mnajafy"><i class="fab fa-github"></i></a>
+                                                <!-- <a class="btn text-dark p-0 mr-2" href="#"><i class="fab fa-github"></i></a> -->
+                                            </p>
+                                            <div data-aos="fade-up">
+                                                <a href="upload/cv_dev.pdf" download="cv_mohammad_najafy.pdf" class="btn btn-outline-primary">Telecharger CV</a>
+                                                <a href="https://mnajafy.github.io/portfolio/#contact" class="btn btn-outline-secondary ">Contact</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                <div class="col-6 col-md-4 col-xl-2">
-                    <ul>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                    </ul>
-                </div>
+                <section class="py-3 py-md-4 py-lg-5" id="presentation">
+                    <div data-aos="fade-up">
+                        <div class="section-title">
+                            <h4>Présentation</h4>
+                            <div class="section-title-line"></div>
+                        </div>
+                    </div>
 
-                <div class="col-6 col-md-4 col-xl-2">
-                    <ul>
-                        <li>WordPress</li>
-                        <li>PrestaShop</li>
-                    </ul>
-                </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-5 order-lg-1 text-center">
+                            <div data-aos="zoom-in">
+                                <img class="img-fluid rounded-4 border p-2" src="img/portfolio/mnajafy.png" alt="">
+                            </div>
+                        </div>
 
-                <div class="col-6 col-md-4 col-xl-2">
-                    <ul>
-                        <li>Gestion de projet</li>
-                        <li>Etablir un cahier des charges</li>
-                        <li>Integration de maquettes</li>
-                    </ul>
-                </div>
+                        <div class="col-12 col-lg-7 order-lg-0">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <p>Avec une maîtrise complète des différents langages en back-end comme en front-end, je peux également mettre mon
+                                        expertise à votre service pour vous conseiller et vous accompagner dans votre projet.</p>
+                                    <p>Je vous apporte donc des solutions complètes pour développer vos pages et vos modules de façon dynamique.</p>
+                                    <h5>Pour tous vos projets, je peux vous apporter des solutions pour :</h5>
+                                    <ul class="mb-5">
+                                        <li>
+                                            <p class="mb-0">Dynamiser / créer vos sites internet</p>
+                                        </li>
+                                        <li>
+                                            <p class="mb-0">Concevoir des fonctionnalités pour votre entreprise</p>
+                                        </li>
+                                    </ul>
+                                    <h5 class="mb-3" id="contact">Contact:</h5>
+                                    <a class="btn btn-info p-2 font-weight-bold mb-3" href="tel:+33667527248"><i class="fas fa-phone-alt"></i> : 06 67 52 72 48</a>
+                                    <a class="btn btn-primary p-2 font-weight-bold mb-3" href="mailto:m.najafy@hotmail.com"><i class="far fa-envelope"></i> : m.najafy@hotmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-3 py-md-4 py-lg-5" id="competences">
+                    <div data-aos="fade-up">
+                        <div class="section-title">
+                            <h4>Compétences</h4>
+                            <div class="section-title-line-b"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="competence">HTML / CSS</div>
+                            <div class="competence">Bootstrap</div>
+                            <div class="competence">SASS</div>
+                            <div class="competence">JavaScript</div>
+                            <div class="competence">jQuery</div>
+                            <div class="competence">Ajax</div>
+                            <div class="competence">npm</div>
+                            <div class="competence">Yarn</div>
+                            <div class="competence">React</div>
+                            <div class="competence">Vue.js</div>
+                            <div class="competence">PHP</div>
+                            <div class="competence">MySQL</div>
+                            <div class="competence">Yii</div>
+                            <div class="competence">Symfony</div>
+                            <div class="competence">Git / GitHub</div>
+                            <div class="competence">WordPress</div>
+                            <div class="competence">PrestaShop</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-3 py-md-4 py-lg-5" id="templates">
+                    <div data-aos="fade-up">
+                        <div class="section-title">
+                            <h4>web themes & templates</h4>
+                            <div class="section-title-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6 mb-3">
+                            <div class="card card-template">
+                                <img class="card-img-top" src="img/template/fourtheme.png" alt="">
+                                <div class="card-body">
+                                    <div>
+                                        <h4 class="mb-0">Fourtheme</h4>
+                                        <p><small class="text-white">Symfony</small></p>
+                                        <a class="btn btn-info" href="https://github.com/mnajafy/fourtheme"><i class="fas fa-code"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 mb-3">
+                            <div class="card card-template">
+                                <img class="card-img-top" src="img/template/barbershop.png" alt="">
+                                <div class="card-body">
+                                    <div>
+                                        <h4 class="mb-0">Barbershop</h4>
+                                        <p><small class="text-white">Html / CSS / JavaScript</small></p>
+                                        <a class="btn btn-primary" href="https://mnajafy.github.io/BarberShop/"><i class="far fa-eye"></i> View</a>
+                                        <a class="btn btn-info" href="https://github.com/mnajafy/BarberShop"><i class="fas fa-code"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 mb-3">
+                            <div class="card card-template">
+                                <img class="card-img-top" src="img/template/portfolio-dev.png" alt="">
+                                <div class="card-body">
+                                    <div>
+                                        <h4 class="mb-0">Portfolio-dev</h4>
+                                        <p><small class="text-white">Html / CSS / JavaScript</small></p>
+                                        <a class="btn btn-primary" href="https://mnajafy.github.io/portfolio_dev/"><i class="far fa-eye"></i> View</a>
+                                        <a class="btn btn-info" href="https://github.com/mnajafy/portfolio_dev"><i class="fas fa-code"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 mb-3">
+                            <div class="card card-template">
+                                <img class="card-img-top" src="img/template/buttons.png" alt="">
+                                <div class="card-body">
+                                    <div>
+                                        <h4 class="mb-0">Buttons</h4>
+                                        <p><small class="text-white">Html / CSS</small></p>
+                                        <a class="btn btn-primary" href="https://mnajafy.github.io/button/"><i class="far fa-eye"></i> View</a>
+                                        <a class="btn btn-info" href="https://github.com/mnajafy/button">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 mb-3">
+                            <div class="card card-template">
+                                <img class="card-img-top" src="img/template/dr_m_barber_shop.png" alt="">
+                                <div class="card-body">
+                                    <div>
+                                        <h4 class="mb-0">Dr M.BarberShop</h4>
+                                        <p><small class="text-white">PHP</small></p>
+                                        <a class="btn btn-info" href="https://github.com/mnajafy/dr_m_barber_shop"><i class="fas fa-code"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
-    </section> <!-- end section Compétences -->
 
-    <section id="templates" class="section template">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-lg-center">web themes & templates</h4>
-                <hr class="ml-0 ml-lg-auto">
+            <footer class="bg-secondary py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-9">
+                            <p class="mb-0 text-dark">Copyright © 2020-2021 Powered By <a class="text-dark" href="https://github.com/mnajafy">Mohammad Najafy</a></p>
+                        </div>
+                    
+                        <div class="col-12 col-md-3 text-md-right">
+                            <a class="text-dark mr-2" href="https://www.facebook.com/najafy"><i class="fab fa-facebook-f"></i></a>
+                            <a class="text-dark mr-2" href="https://www.linkedin.com/in/mohammad-najafy-229b57149/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="text-dark mr-2" href="https://twitter.com/mohammad_najafy"><i class="fab fa-twitter"></i></a>
+                            <a class="text-dark mr-2" href="https://www.instagram.com/m.najafy69/"><i class="fab fa-instagram"></i></a>
+                            <a class="text-dark mr-2" href="https://github.com/mnajafy"><i class="fab fa-github"></i></a>
+                            <!-- <a class="btn text-dark p-0 mr-2" href="#"><i class="fab fa-github"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="back-top">
+                <a href="#top"></a>
             </div>
+        </main>
+    </div>
 
-            <div class="row">
-                <div class="col-sm-5 mx-auto">
-                    <div class="card">
-                        <img src="img/template/template_7.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-5 mx-auto">
-                    <div class="card">
-                        <img src="img/template/template_8.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-5 mx-auto">
-                    <div class="card">
-                        <img src="img/template/template_12.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-sm-5 mx-auto">
-                    <div class="card">
-                        <img src="img/template/template_15.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> <!-- end section web themes & templates -->
-
-    <footer class="pb-4 bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="section-title">
-                        <h4>réseaux sociaux</h4>
-                        <hr class="ml-0">
-                    </div>
-
-                    <ul class="list-reseau">
-                        <li><a href="https://www.linkedin.com/in/mohammad-najafy-229b57149/"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/mnajafy"><i class="fab fa-github-square"></i></a></li>
-                        <li><a href="https://www.instagram.com/codeveloppeur/?hl=fr"><i class="fab fa-instagram-square"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <div class="section-title">
-                        <h4>Contact</h4>
-                        <hr class="ml-0">
-                    </div>
-
-                    <ul>
-                        <li class="mb-2"><a href="mailto:m.najafy@hotmail.com"><i class="fas fa-envelope"></i> m.najafy@hotmail.com</a></li>
-                        <li><a href="tel:0667527248"><i class="fas fa-mobile"></i> 06.67.52.72.48</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="mt-0">
-            <p class="text-center text-white mb-0">Copyright © 2020 | <a href="mailto:m.najafy@hotmail.com">m.najafy@hotmail.com</a></p>
-        </div>
-    </footer>
-    <!-- script -->
-    <script src="fontawesome/all.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    <script src="lib/jquery-3.6.0/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="lib/bootstrap-4.0.0/js/bootstrap.min.js"></script>
+    <script src="lib/aos/dist/aos.js"></script>
+    <script src="lib/parallax.js-1.5.0/parallax.min.js"></script>
+    <script src="dist/js/portfolio.js"></script>
 </body>
 </html>
