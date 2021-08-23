@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,34 +13,41 @@
     <!-- mainCss -->
     <link rel="stylesheet" href="dist/css/portfolio.css">
     <!-- title -->
-    <title>portfolio: Mohammad najafy | développeur web | développeur symfony | Développement BackEnd | Développement FrontEnd</title>
+    <title>portfolio: Mohammad najafy | développeur web | développeur symfony | Développement BackEnd | Développement
+        FrontEnd</title>
 </head>
+
 <body id="top">
-    <div class="container py-3 py-md-4 py-lg-5">
+    <div id="app" class="container py-3 py-md-4 py-lg-5">
         <main>
-            <div class="container">
+            <div class="py-2 px-3">
                 <header>
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <a class="navbar-brand" href="https://mnajafy.github.io/portfolio/">
                             <!-- <span class="bg-primary rounded-circle p-2 font-weight-bold text-light"><i class="fab fa-medium-m"></i></span> -->
-                            <img src="img/portfolio/logo.png" width="25" height="25" class="d-inline-block align-top" alt="">
+                            <img src="img/portfolio/logo.png" width="25" height="25" class="d-inline-block align-top"
+                                alt="">
                             M.Najafy
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                
+
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="https://mnajafy.github.io/portfolio/#presentation">Présentation</a>
+                                    <a class="nav-link"
+                                        href="https://mnajafy.github.io/portfolio/#presentation">Présentation</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="https://mnajafy.github.io/portfolio/#competences">Compétences</a>
+                                    <a class="nav-link"
+                                        href="https://mnajafy.github.io/portfolio/#competences">Compétences</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="https://mnajafy.github.io/portfolio/#templates">Web Themes & Templates</a>
+                                    <a class="nav-link" href="https://mnajafy.github.io/portfolio/#templates">Web Themes
+                                        & Templates</a>
                                 </li>
                                 <!-- <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -65,10 +73,11 @@
                             <div class="row">
                                 <div class="col-12 col-lg-5 col-img">
                                     <div data-aos="zoom-in">
-                                        <img src="img/portfolio/mnajafy.jpg" class="img-fluid rounded-circle p-2 p-lg-3" alt="Mohammad Najafy">
+                                        <img src="img/portfolio/mnajafy.jpg" class="img-fluid rounded-circle p-2 p-lg-3"
+                                            alt="Mohammad Najafy">
                                     </div>
                                 </div>
-                            
+
                                 <div class="col-12 col-lg-7 d-flex align-items-center">
                                     <div class="card border-0">
                                         <div class="card-body">
@@ -77,19 +86,20 @@
                                                 <h4 class="card-title">Mohammad Najafy</h4>
                                             </div>
                                             <div data-aos="fade-left">
-                                                <p class="card-text text-align-justify">Fort de mon expérience de plus de 2 ans et de mon expertise en tant que développeur d’applications web, j’accompagne les entreprises et les professionnels dans leur transformation technologique et digitale.</p>
+                                                <p class="card-text text-align-justify">Fort de mon expérience de plus
+                                                    de 2 ans et de mon expertise en tant que développeur d’applications
+                                                    web, j’accompagne les entreprises et les professionnels dans leur
+                                                    transformation technologique et digitale.</p>
                                             </div>
                                             <p class="mt-3">
-                                                <a class="text-dark mr-2" href="https://www.facebook.com/codeveloppeur"><i class="fab fa-facebook-f"></i></a>
-                                                <a class="text-dark mr-2" href="https://www.linkedin.com/in/mohammad-najafy-229b57149/"><i class="fab fa-linkedin-in"></i></a>
-                                                <a class="text-dark mr-2" href="https://twitter.com/mohammad_najafy"><i class="fab fa-twitter"></i></a>
-                                                <a class="text-dark mr-2" href="https://www.instagram.com/codeveloppeur/"><i class="fab fa-instagram"></i></a>
-                                                <a class="text-dark" href="https://github.com/mnajafy"><i class="fab fa-github"></i></a>
+                                                <a v-for="social in socialNetwork" :href="social" class="text-dark mr-2"><i :class="social.icon"></i></a>
                                                 <!-- <a class="btn text-dark p-0 mr-2" href="#"><i class="fab fa-github"></i></a> -->
                                             </p>
                                             <div data-aos="fade-up">
-                                                <a href="upload/cv_najafy.pdf" download="cv_mohammad_najafy.pdf" class="btn btn-outline-primary">Telecharger CV</a>
-                                                <a href="https://mnajafy.github.io/portfolio/#contact" class="btn btn-outline-secondary ">Contact</a>
+                                                <a href="upload/cv_najafy.pdf" download="cv_mohammad_najafy.pdf"
+                                                    class="btn btn-outline-primary">Telecharger CV</a>
+                                                <a href="https://mnajafy.github.io/portfolio/#contact"
+                                                    class="btn btn-outline-secondary ">Contact</a>
                                             </div>
                                         </div>
                                     </div>
@@ -110,16 +120,20 @@
                     <div class="row">
                         <div class="col-12 col-lg-5 order-lg-1 text-center">
                             <div data-aos="zoom-in">
-                                <img class="img-fluid rounded-4 border p-2" src="img/portfolio/mnajafy.png" alt="Mohammad Najafy">
+                                <img class="img-fluid rounded-4 border p-2" src="img/portfolio/mnajafy.png"
+                                    alt="Mohammad Najafy">
                             </div>
                         </div>
 
                         <div class="col-12 col-lg-7 order-lg-0">
                             <div class="card border-0">
                                 <div class="card-body">
-                                    <p>Avec une maîtrise complète des différents langages en back-end comme en front-end, je peux également mettre mon
-                                        expertise à votre service pour vous conseiller et vous accompagner dans votre projet.</p>
-                                    <p>Je vous apporte donc des solutions complètes pour développer vos pages et vos modules de façon dynamique.</p>
+                                    <p>Avec une maîtrise complète des différents langages en back-end comme en
+                                        front-end, je peux également mettre mon
+                                        expertise à votre service pour vous conseiller et vous accompagner dans votre
+                                        projet.</p>
+                                    <p>Je vous apporte donc des solutions complètes pour développer vos pages et vos
+                                        modules de façon dynamique.</p>
                                     <h5>Pour tous vos projets, je peux vous apporter des solutions pour :</h5>
                                     <ul class="mb-5">
                                         <li>
@@ -129,9 +143,12 @@
                                             <p class="mb-0">Concevoir des fonctionnalités pour votre entreprise</p>
                                         </li>
                                     </ul>
-                                    <h5 class="mb-3" id="contact">Contact:</h5>
-                                    <a class="btn btn-info p-2 font-weight-bold mb-3" href="tel:+33667527248"><i class="fas fa-phone-alt"></i> : 06 67 52 72 48</a>
-                                    <a class="btn btn-primary p-2 font-weight-bold mb-3" href="mailto:m.najafy@hotmail.com"><i class="far fa-envelope"></i> : m.najafy@hotmail.com</a>
+                                    <h5 class="mb-3">Contact:</h5>
+                                    <a class="btn btn-info p-2 font-weight-bold mb-3" href="tel:+33667527248"><i
+                                            class="fas fa-phone-alt"></i> : 06 67 52 72 48</a>
+                                    <a class="btn btn-primary p-2 font-weight-bold mb-3"
+                                        href="mailto:m.najafy@hotmail.com"><i class="far fa-envelope"></i> :
+                                        m.najafy@hotmail.com</a>
                                 </div>
                             </div>
                         </div>
@@ -148,32 +165,14 @@
 
                     <div class="row">
                         <div class="col">
-                            <div class="competence">HTML / CSS</div>
-                            <div class="competence">Bootstrap</div>
-                            <div class="competence">SASS</div>
-                            <div class="competence">JavaScript</div>
-                            <div class="competence">jQuery</div>
-                            <div class="competence">Ajax</div>
-                            <div class="competence">npm</div>
-                            <div class="competence">Yarn</div>
-                            <div class="competence">React</div>
-                            <div class="competence">Vue.js</div>
-                            <div class="competence">PHP</div>
-                            <div class="competence">phpunit</div>
-                            <div class="competence">doctrine-orm</div>
-                            <div class="competence">Twig</div>
-                            <div class="competence">Composer</div>
-                            <div class="competence">MySQL</div>
-                            <div class="competence">Yii</div>
-                            <div class="competence">Symfony</div>
-                            <div class="competence">Git / GitHub</div>
-                            <div class="competence">WordPress</div>
-                            <div class="competence">PrestaShop</div>
+                            <div class="btn bg-light border rounded-pill mr-1 mb-2" style="min-width: 5rem;" v-for="competence in competences" :key="competence.id">
+                                {{ competence.name }}
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="py-3 py-md-4 py-lg-5" id="templates">
+                <section class="pt-3 pt-md-4 pt-lg-5" id="templates">
                     <div data-aos="fade-up">
                         <div class="section-title">
                             <h4>web themes & templates</h4>
@@ -182,110 +181,17 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12 col-lg-6 mb-3">
+                        <div class="col-12 col-lg-6 mb-3" v-for="template in templates" :key="template.id">
                             <div class="card card-template">
-                                <img class="card-img-top" src="img/template/e-commerce.png" alt="">
+                                <img class="card-img-top" :src="template.img" alt="">
                                 <div class="card-body">
                                     <div>
-                                        <h4 class="mb-0">e-commerce</h4>
-                                        <p><small class="text-white">Symfony + tests (phpunit)</small></p>
-                                        <a class="btn btn-info" href="https://github.com/mnajafy/e-commerce"><i class="fas fa-code"></i> GitHub</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-lg-6 mb-3">
-                            <div class="card card-template">
-                                <img class="card-img-top" src="img/template/gallery2.jpeg" alt="">
-                                <div class="card-body">
-                                    <div>
-                                        <h4 class="mb-0">Gallery2</h4>
-                                        <p><small class="text-white">Vue.js</small></p>
-                                        <a class="btn btn-info" href="https://github.com/mnajafy/gallery2"><i class="fas fa-code"></i> GitHub</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-lg-6 mb-3">
-                            <div class="card card-template">
-                                <img class="card-img-top" src="img/template/fourtheme.png" alt="">
-                                <div class="card-body">
-                                    <div>
-                                        <h4 class="mb-0">Fourtheme</h4>
-                                        <p><small class="text-white">Symfony</small></p>
-                                        <a class="btn btn-info" href="https://github.com/mnajafy/fourtheme"><i class="fas fa-code"></i>
-                                            GitHub</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-lg-6 mb-3">
-                            <div class="card card-template">
-                                <img class="card-img-top" src="img/template/barbershop.png" alt="">
-                                <div class="card-body">
-                                    <div>
-                                        <h4 class="mb-0">Barbershop</h4>
-                                        <p><small class="text-white">Html / CSS / JavaScript</small></p>
-                                        <a class="btn btn-primary" href="https://mnajafy.github.io/BarberShop/"><i class="far fa-eye"></i> View</a>
-                                        <a class="btn btn-info" href="https://github.com/mnajafy/BarberShop"><i class="fas fa-code"></i> GitHub</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-lg-6 mb-3">
-                            <div class="card card-template">
-                                <img class="card-img-top" src="img/template/portfolio-dev.png" alt="">
-                                <div class="card-body">
-                                    <div>
-                                        <h4 class="mb-0">Portfolio-dev</h4>
-                                        <p><small class="text-white">Html / CSS / JavaScript</small></p>
-                                        <a class="btn btn-primary" href="https://mnajafy.github.io/portfolio_dev/"><i class="far fa-eye"></i> View</a>
-                                        <a class="btn btn-info" href="https://github.com/mnajafy/portfolio_dev"><i class="fas fa-code"></i> GitHub</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-lg-6 mb-3">
-                            <div class="card card-template">
-                                <img class="card-img-top" src="img/template/buttons.png" alt="">
-                                <div class="card-body">
-                                    <div>
-                                        <h4 class="mb-0">Buttons</h4>
-                                        <p><small class="text-white">Html / CSS</small></p>
-                                        <a class="btn btn-primary" href="https://mnajafy.github.io/button/"><i class="far fa-eye"></i> View</a>
-                                        <a class="btn btn-info" href="https://github.com/mnajafy/button">GitHub</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-lg-6 mb-3">
-                            <div class="card card-template">
-                                <img class="card-img-top" src="img/template/dr_m_barber_shop.png" alt="">
-                                <div class="card-body">
-                                    <div>
-                                        <h4 class="mb-0">Dr M.BarberShop</h4>
-                                        <p><small class="text-white">PHP</small></p>
-                                        <a class="btn btn-info" href="https://github.com/mnajafy/dr_m_barber_shop"><i class="fas fa-code"></i> GitHub</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-lg-6 mb-3">
-                            <div class="card card-template">
-                                <img class="card-img-top" src="img/template/portfolio_bg_dark.png" alt="">
-                                <div class="card-body">
-                                    <div>
-                                        <h4 class="mb-0">Portfolio (bg: dark)</h4>
-                                        <p><small class="text-white">Html / CSS</small></p>
-                                        <a class="btn btn-primary" href="https://mnajafy.github.io/portfolio/"><i class="far fa-eye"></i> View</a>
-                                        <a class="btn btn-info" href="https://github.com/mnajafy/portfolio">GitHub</a>
+                                        <h4 class="mb-0">{{ template.name }}</h4>
+                                        <p><small class="text-white">{{ template.lang }}</small></p>
+                                        <a class="btn btn-primary" v-if="template.view" :href="template.view"><i
+                                                class="far fa-eye"></i> View</a>
+                                        <a class="btn btn-info" :href="template.github"><i
+                                                class="fas fa-code"></i> GitHub</a>
                                     </div>
                                 </div>
                             </div>
@@ -298,15 +204,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-9">
-                            <p class="mb-0 text-dark">Copyright © 2019-2021 Powered By <a class="text-dark" href="https://github.com/mnajafy">Mohammad Najafy</a></p>
+                            <p class="mb-0 text-dark">Copyright © 2019-2021 Powered By <a class="text-dark"
+                                    href="https://github.com/mnajafy">Mohammad Najafy</a></p>
                         </div>
-                    
+
                         <div class="col-12 col-md-3 text-md-right">
-                            <a class="text-dark mr-2" href="https://www.facebook.com/codeveloppeur"><i class="fab fa-facebook-f"></i></a>
-                            <a class="text-dark mr-2" href="https://www.linkedin.com/in/mohammad-najafy-229b57149/"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="text-dark mr-2" href="https://twitter.com/mohammad_najafy"><i class="fab fa-twitter"></i></a>
-                            <a class="text-dark mr-2" href="https://www.instagram.com/codeveloppeur/"><i class="fab fa-instagram"></i></a>
-                            <a class="text-dark mr-2" href="https://github.com/mnajafy"><i class="fab fa-github"></i></a>
+                            <a v-for="social in socialNetwork" :href="social" class="text-dark mr-2"><i :class="social.icon"></i></a>
                             <!-- <a class="btn text-dark p-0 mr-2" href="#"><i class="fab fa-github"></i></a> -->
                         </div>
                     </div>
@@ -324,6 +227,9 @@
     <script src="lib/bootstrap-4.0.0/js/bootstrap.min.js"></script>
     <script src="lib/aos/dist/aos.js"></script>
     <script src="lib/parallax.js-1.5.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="dist/js/portfolio.js"></script>
+    <script src="dist/js/vue/app.js"></script>
 </body>
+
 </html>
